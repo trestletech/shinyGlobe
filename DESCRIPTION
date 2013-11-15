@@ -1,0 +1,17 @@
+Package: shinyGlobe
+Title: Shiny Wrappers for WebGL Globe
+Version: 0.1.0
+Date: 2013-11-14
+Author: Trestle Technology, LLC.
+Maintainer: Jeff Allen <jeff@trestletech.com>
+Description: Shiny wrappers for the Google's WebGL Globe platform.
+License: MIT
+Depends:
+    R (>= 2.15.0)
+Imports:
+    shiny (>= 0.6.0)
+BugReports: https://github.com/trestletech/shinyGlobe/issues
+Collate:
+    'globe-output.R'
+    'init.R'
+    'render-globe.R'
