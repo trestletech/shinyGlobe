@@ -5,7 +5,7 @@
       body {
         margin: 0;
         padding: 0;
-        background: #000000 url(/shinyGlobe/loading.gif) center center no-repeat;
+        background: #000000 url(./shinyGlobe/loading.gif) center center no-repeat;
         color: #ffffff;
         font-family: sans-serif;
         font-size: 13px;
@@ -90,5 +90,5 @@
         position: absolute;
         bottom: 15px;
         left: 20px;
-        background: url(/shinyGlobe/ce.png);
+        background: url(./shinyGlobe/ce.png);
       }

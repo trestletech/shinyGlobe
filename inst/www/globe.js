@@ -71,7 +71,7 @@ DAT.Globe = function(container, colorFn) {
 
   var overRenderer;
 
-  var imgDir = '/shinyGlobe/';
+  var imgDir = './shinyGlobe/';
 
   var curZoomSpeed = 0;
   var zoomSpeed = 50;
