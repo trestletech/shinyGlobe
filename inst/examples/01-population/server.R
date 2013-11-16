@@ -11,5 +11,5 @@ shinyServer(function(input, output, session) {
   
   output$globe <- renderGlobe({
     list(a=flattened)
-  })  
+  })
 })

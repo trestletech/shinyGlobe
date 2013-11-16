@@ -20,7 +20,7 @@ renderGlobe <- function(expr, width="auto", height="auto", env = parent.frame(),
         
     # RJSONIO doesn't seem to handle the data the way we want. Just serialize
     # ourselves as a string
-    dataStr <- "["
+    dataStr <- ""
     firstSer <- TRUE
     for (ser in names(data)){
       serStr <- paste("[\"", ser, "\",[",
@@ -28,7 +28,6 @@ renderGlobe <- function(expr, width="auto", height="auto", env = parent.frame(),
       dataStr <- paste(dataStr, serStr, sep=ifelse(firstSer, "", ","))
       firstSer <- FALSE
     }
-    dataStr <- paste(dataStr, "]", sep="")
     
     return (dataStr)
   })
