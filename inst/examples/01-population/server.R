@@ -7,9 +7,8 @@ shinyServer(function(input, output, session) {
   population <- readRDS("population.Rds")
   #Filter out to only major cities -- otherwise too much data. Now ~4.5k rows
   population <- population[population$Population > .0025, ]
-  flattened <- as.vector(t(population))
   
   output$globe <- renderGlobe({
-    list(a=flattened)
+    population
   })
 })
