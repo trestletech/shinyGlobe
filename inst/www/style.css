@@ -14,7 +14,7 @@
       }
 
       #info {
-
+        text-align: right;
         font-size: 11px;
         position: absolute;
         bottom: 5px;
